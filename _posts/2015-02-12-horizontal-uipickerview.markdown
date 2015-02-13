@@ -91,11 +91,6 @@ Now we have a picker.
 
 {% highlight swift %}
     func flipPicker() {
-        let screenRect:CGRect = UIScreen.mainScreen().bounds
-        let screenWidth:CGFloat = screenRect.size.width
-        self.myPickerView.delegate = self
-        self.myPickerView.dataSource = self
-        self.myPickerView.frame = CGRectMake(0, 0, 24.0, 216.0);
         self.myPickerView.transform = CGAffineTransformRotate(self.myPickerView.transform, CGFloat(-M_PI/2))
         self.myPickerView.reloadAllComponents()
     }

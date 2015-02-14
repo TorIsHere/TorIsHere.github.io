@@ -24,7 +24,7 @@ First, let's start from create a vertical UIPickerView
 ## Vertical UIPickerView
 
 ### 1. Drag and drop Picker View
-
+![My picker screenshot]({{ site.url }}/static/img/post/UIPickerView.png)
 
 ### 2. Implement UIPickerViewDelegate, UIPickerViewDataSource
 
@@ -86,6 +86,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
 
 Now we have a picker.
+![My picker screenshot]({{ site.url }}/static/img/post/myPicker.png)
+
 
 ## 3. Now let's make it horizontal
 

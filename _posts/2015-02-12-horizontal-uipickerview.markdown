@@ -2,6 +2,7 @@
 layout: post
 title:  "Swift: Horizontal UIPickerView!"
 date:   2015-02-12 18:17:42
+tags: Swift iOS
 categories: Swift
 ---
 At the time I write this post, there is no easy/official library from `apple` to use as a horizontal list picker. 

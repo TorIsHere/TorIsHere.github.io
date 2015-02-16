@@ -13,7 +13,7 @@ layout: default
           {% for tag in post.tags%}
             {% if tags == "iOS" %}
               <span class="post-meta-tag" style="background-color:red"> {{tag}}</span>
-            {% elseif tags == "Swift" %}
+            {% elsif tags == "Swift" %}
               <span class="post-meta-tag" style="background-color:green"> {{tag}}</span>
             {% endif %}
           {% endfor %}

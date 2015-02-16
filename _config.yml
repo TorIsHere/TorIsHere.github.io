@@ -1,5 +1,5 @@
 # Site settings
-title: "Tor Is Here"
+title: "TOR Is Here"
 email: kittikorn.a@gmail.com
 description: This blog's goal is to record the challenging topic about iOS, Swift and Python, that I encountered and make them easy to understand as possible. 
 baseurl: "" # the subpath of your site, e.g. /blog/

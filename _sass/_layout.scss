@@ -180,7 +180,12 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $red-color;
+    color: $grey-color;
+}
+
+.post-meta-tag {
+    font-size: $small-font-size;
+    color: $white-color;
 }
 
 .post-link {

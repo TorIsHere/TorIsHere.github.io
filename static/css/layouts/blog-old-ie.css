@@ -125,7 +125,9 @@ h3 {
 }
 
 .post-meta-tag {
-
+    font-size: 90%;
+    color: #FFFFFF;
+    padding: 5px 3px;
 }
 
 .post-category {

@@ -15,7 +15,7 @@ global setting constant such as locale, language, currency etc.
 ##Implementation
 Using [dispatch_once](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man3/dispatch_once_f.3.html) (Objective-C approach), if you are interested [Singletons in Objective-C](http://www.galloway.me.uk/tutorials/singleton-classes/). Like the name say, this function will execute block only once. We utilize this by put initialise code inside dispatch_once.
 
-```swift
+{% highlight swift %}
 class Singleton {
 
   class var sharedInstance : Singleton {
@@ -30,11 +30,12 @@ class Singleton {
   }
   
 }
-```
+{% endhighlight %}
+
 ###Using Example
-```swift
+{% highlight swift %}
 var global_instance:Singleton = Singleton.sharedInstance
-```
+{% endhighlight %}
 
 What happened here is when we call `Singleton.sharedInstance`, Static.instance will be initialised once and only once. Later when we try to access `Singleton.sharedInstance`, we shall get an exact same instance.  
 
@@ -45,20 +46,31 @@ What happened here is when we call `Singleton.sharedInstance`, Static.instance w
 ##Example
 ```
 - Const
+
   - Category1
+
     - key : value 
+
     - key : value 
+
     - key : value 
+
   - Category2
+
     - key : value 
+
     - key : value 
+
   - Category3
+
     - key : value 
+
     - key : value 
+
     - key : value 
 ```
 
-```swift
+{% highlight swift %}
 class ConstSingleton {
     private var constant = Dictionary<String, Dictionary<String,String>>()
     
@@ -107,7 +119,7 @@ class ConstSingleton {
         return Static.instance!
     }
 }
-```
+{% endhighlight %}
 
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

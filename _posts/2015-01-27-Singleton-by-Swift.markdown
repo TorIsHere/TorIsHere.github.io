@@ -2,6 +2,7 @@
 layout: post
 title:  "Constant Singleton by Swift"
 date:   2015-01-27 18:57:42
+tags: Swift
 categories: Swift 
 ---
 # Constant Singleton by Swift

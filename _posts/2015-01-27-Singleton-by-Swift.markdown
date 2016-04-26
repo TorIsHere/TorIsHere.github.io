@@ -2,12 +2,11 @@
 layout: post
 title:  "Constant Singleton by Swift"
 date:   2015-01-27 18:57:42
-tags: Swift
-categories: Swift 
+categories: code
 ---
 # Constant Singleton by Swift
-[Singleton pattern](http://www.galloway.me.uk/tutorials/singleton-classes/) is a design pattern that restricts 
-the instance of a class to only one object. 
+[Singleton pattern](http://www.galloway.me.uk/tutorials/singleton-classes/) is a design pattern that restricts
+the instance of a class to only one object.
 
 ## When to use
 When you wanted to share data between different parts of code, instead of having to pass the data around. For example,
@@ -29,7 +28,7 @@ class Singleton {
     }
     return Static.instance!
   }
-  
+
 }
 {% endhighlight %}
 
@@ -49,30 +48,30 @@ What happened here is when we call `Singleton.sharedInstance`, Static.instance w
 
   - Category1
 
-    - key : value 
+    - key : value
 
-    - key : value 
+    - key : value
 
-    - key : value 
+    - key : value
 
   - Category2
 
-    - key : value 
+    - key : value
 
-    - key : value 
+    - key : value
 
   - Category3
 
-    - key : value 
+    - key : value
 
-    - key : value 
+    - key : value
 
-    - key : value 
+    - key : value
 
 {% highlight swift %}
 class ConstSingleton {
     private var constant = Dictionary<String, Dictionary<String,String>>()
-    
+
     func getConst(type:String, key: String) -> String? {
         if constant.isEmpty || constant[type] == nil{
             return nil
@@ -85,7 +84,7 @@ class ConstSingleton {
         }
         return nil
     }
-    
+
     func setConst(type:String, key: String, value: String) -> Bool? {
         var success:Bool
         if constant.isEmpty || constant[type] == nil{
@@ -102,11 +101,11 @@ class ConstSingleton {
             } else {
                 println("Added a new value")
             }
-            
+
         }
         return true
     }
-    
+
     class var sharedInstance : ConstSingleton {
         struct Static {
             static var onceToken : dispatch_once_t = 0

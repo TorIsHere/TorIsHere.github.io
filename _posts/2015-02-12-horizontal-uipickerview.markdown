@@ -2,15 +2,14 @@
 layout: post
 title:  "Swift: Horizontal UIPickerView!"
 date:   2015-02-12 18:17:42
-tags: Swift iOS
-categories: Swift
+categories: code
 ---
-At the time I write this post, there is no easy/official library from `apple` to use as a horizontal list picker. 
+At the time I write this post, there is no easy/official library from `apple` to use as a horizontal list picker.
 However there is somw work around that you can do to make something similar.
 
 Starting from using [UIPickerView][UIPickerView].
 
-## Good ot KNOW
+## Good to KNOW
 The acceptable height for [UIPickerView][UIPickerView] / [UIDatePicker][UIDatePicker] is
 
 * `162`
@@ -35,37 +34,37 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var myPickerView: UIPickerView!
-    
+
     let Data = ["A", "B", "C", "D", "E", "F", "G"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.myPickerView.dataSource = self
         self.myPickerView.delegate   = self
-        
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     // UIPickerViewDataSource
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
-    
+
     func pickerView(pickerView: UIPickerView,
         rowHeightForComponent component: Int) -> CGFloat{
             return 24.0
     }
-    
+
     // UIPickerViewDelegate
     func pickerView(pickerView: UIPickerView,
         numberOfRowsInComponent component: Int) -> Int {
             return Data.count
     }
-    
+
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
       return Data[row]
     }

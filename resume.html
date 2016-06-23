@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Everything is Awesome</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/resume.css">
+    
+    <link rel="stylesheet" href="assets/css/marketing.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/resume.js"></script>
+    <style>
+      p {
+        font-size: 120%;
+      }
+      #map_canvas {
+        width: 750px;
+        height: 400px;
+        background-color: #CCC;
+      }
+
+      .container {
+        width: 100%;
+        min-width:360px;
+        padding: 6px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: flex-start;
+        -webkit-align-items: flex-start;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        background-color: #F4F4F4;
+      }
+
+      .description {
+        padding-left: 0.75em;
+        width: 50%;
+        min-width: 300px;
+      }
+      @font-face {
+          font-family: "NotoSansThin";
+          src: url(static/fonts/NotoSansCJKjp-Thin.otf) format("opentype");
+      }
+    </style>
+
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKBB4VWewZoKjUpW0nNjBL6K7iLvOOmy4"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(20.905680, 123.415551),
+          zoom: 3,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+      <a href="index.html"><i class="fa fa-home fa-5"></i></a>
+      <a href="assets/kittikorn_ariyasuk_cv.pdf" target="_blank" style="text-decoration:none;float:right;"><i class="fa fa-download fa-5"></i>PDF</a>
+      <br>
+      <h1 class="center-text">HE<span style="color:#ff843b;">LL</span>O<br><br> I am <span style="color:#ff843b;">K</span>ittikorn <span style="color:#ff843b;">A</span>riyasuk</h1>
+      <h3 class="center-text">Full Stack Programmer, Mobile Game Developer</h3>
+      <div class="flex-container">
+        <div class="resume-circular-img" style="background: url('images/me1.jpg') no-repeat;"></div>
+      </div>
+      <!-- ABOUT ME-->
+      <hr>
+      <div class="flex-container">
+        <div class="float-center card-container">
+          <div class="card-noborder">
+            <h1 class="center-text">ABOUT</h1>
+            <blockquote><p>My name is Kittikorn Ariyasuk. But you can call me Tor (Not to be confused with norwegian god). Born in Thailand, now working in Japan. A well-rounded mobile game developer experience in both front and back-end programming.
+    I can convert alcohol into code with no promise on number of bugs :)</p></blockquote>
+          </div>
+        </div>
+      </div>
+      <!-- My Location -->
+      <hr>
+      <div class="flex-container">
+        <div class="float-center card-container">
+          <div class="card-noborder">
+            <h1 class="center-text">MY LOCATION</h1>
+            <p class="center-text">Kittikorn come from Bangkok, Thaland. Now working in Tokyo, Japan.</p>
+            <style>
+              .overlay {
+                 background:transparent; 
+                 position:relative; 
+                 width:640px;
+                 height:450px; /* your iframe height */
+                 top:450px;  /* your iframe height */
+                 margin-top:-450px;  /* your iframe height */
+              }
+            </style>
+            <div class="overlay" onClick="style.pointerEvents='none'"></div>
+            <div class="flex-container">
+              <iframe width="600" height="450" scrolling="no" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/directions?origin=bangkok&destination=Tokyo&key=AIzaSyDKBB4VWewZoKjUpW0nNjBL6K7iLvOOmy4"></iframe>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- My Skill -->
+      <hr>
+      <div class="flex-container">
+        <div class="float-center card-container">
+          <h1 class="center-text sub-header">SKILLS</h1>
+          <p class="center-text">Here is list of languages/tools that I have hands-on experience.</p>
+          <div class="flex-container">
+            <div class="card-noborder">
+              <ul style="list-style-type: none;">
+                <li><i class="fa fa-trophy fa-2x" style="color:#FFD700;"></i></li>
+                <li>Lua</li>
+                <li>Python</li>
+                <li>Unity</li>
+              </ul>
+            </div>
+            <div class="card-noborder">
+              <ul style="list-style-type: none;">
+                <li><i class="fa fa-trophy fa-2x" style="color:#C0C0C0;"></i></li>
+                <li>Java</li>  
+                <li>Ruby</li>
+                <li>C#</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="card-noborder">
+              <ul style="list-style-type: none;">
+                <li><i class="fa fa-trophy fa-2x" style="color:#C87533;"></i></li>
+                <li>HTML5 & CSS3</li>
+                <li>PHP</li>
+                <li>C++</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-container">
+            <span style="font-size: 75%;"><i class="fa fa-trophy" style="color:#FFD700;"></i>:1K+ hrs, comfortable to work with.
+            <i class="fa fa-trophy" style="color:#C0C0C0;"></i>:500 hrs, hobby levels.
+            <i class="fa fa-trophy" style="color:#C87533;"></i>:&lt;100 hrs, there's a lot to learn.</span>
+          </div>
+        </div>
+      </div>
+      <!-- My Work -->
+      <hr>
+      <div class="flex-container">
+        <div class="float-center card-container">
+          <div class="card-noborder">
+            <h1 class="center-text sub-header">WORK</h1>
+            <div class="flex-container">
+              <div id="project1_button" class="card-icon gray-out" style="background-image:url('images/lovelive110x110.png');">
+              </div>
+              <div id="project2_button" class="card-icon gray-out" style="background-image:url('images/rise110x110.png');">
+              </div>
+              <div id="project3_button" class="card-icon gray-out" style="background-image:url('images/oboero110x110.png');">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <section id="project1" class="container">
+        <img src="images/lovelive220x220.png" style="min-width:220px; min-height:220px;"/>
+        <div class="description">
+          <h2>ラブライブ！<span style="font-size:80%;">スクールアイドルフェスティバル</span></h2>
+          <h3>Role</h3>
+          <p>Full Stack Programmer, Client Leader/ since Nov, 2013</p>
+          <h3>Technology</h3>
+          <p>Lua / C++ / PHP / Playground / Ruby on Rails</p>
+          <h3>Project Description</h3>
+          <p>A rhythm game, titled Love Live! School Idol Festival. Made for both iOS and Android devices. The game was primary release in Japan. Later on was localized and released worldwide.</p>
+          <div>
+            <h3>Status : Available</h3>
+            <a href="https://itunes.apple.com/jp/app/raburaibu!sukuruaidorufesutibaru/id626776655?mt=8" target="_blank"><img src="images/badge/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="App Store"/></a>
+            <a href="https://play.google.com/store/apps/details?id=klb.android.lovelive"><img src="images/badge/english_get.png" lt="Google Play"/></a>
+          </div>
+        </div>
+      </section>
+      <section id="project2" class="container">
+        <img src="images/rise220x220.png" style="min-width:220px; min-height:220px;"/>
+        <div class="description">
+          <h2>Rise To The Throne</h2>
+          <h3>Role</h3>
+          <p>Client-side Engineer</p>
+          <h3>Technology</h3>
+          <p>Lua / C++ / Playground</p>
+          <h3>Project Description</h3>
+          <p> A MMO strategy game, Town building and Battle. Made for both iOS and Android devices. Sell over 161 countries worldwide.</p>
+          <div>
+            <h3>Status : Closed</h3>
+          </div>
+        </div>
+      </section>
+      <section id="project3" class="container">
+        <img src="images/oboero220x220.png" style="min-width:220px; min-height:220px;"/>
+        <div class="description">
+          <h2>Oboero</h2>
+          <h3>Role</h3>
+          <p>Full Stack Programmer</p>
+          <h3>Technology</h3>
+          <p>Lua / C++ / PHP / Playground / Ruby on Rails</p>
+          <h3>Project Description</h3>
+          <p></p>
+          <div>
+            <h3>Status : Developing</h3>
+          </div>
+        </div>
+      </section>
+  </body>
+</html>
